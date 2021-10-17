@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class UserDaoService {
 
 	private static List<User> users = new ArrayList<>();
@@ -36,7 +39,6 @@ public class UserDaoService {
 				return user;
 			}
 		}
-		
 		return null;
 	}
 }
